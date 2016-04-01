@@ -1,0 +1,2484 @@
+/******************************
+    sidebar pic
+******************************/
+div.side div.spacer:nth-of-type(1) 
+    {
+    padding:320px 0 0 !important;
+    background:url(%%od%%) top center no-repeat;
+    margin-top:0px;
+    }
+div.side div.spacer:nth-of-type(1):before 
+    {
+    display:block;
+    margin-top:0px;
+    margin-left:0px;
+    width:320px;
+    padding:0px 0 10px;
+    line-height:15px;
+    background: transparent;
+    font: lighter small veranda, sans-serif;
+    content: "";
+    text-align: left;
+content: "";
+}
+
+/*********************************
+    overall changes
+*********************************/
+* 
+    {
+    margin: 0;padding: 0;border: 0;font: inherit; border-radius: 0px !important;
+    /*cursor:url(%%ball%%) ,auto;*/
+    }
+.res-nightmode *
+    {
+    ;border: none !important; border-radius: 0px !important
+    }
+html 
+    {
+    position: relative; margin: 0px 0px; background:  #f2f2f2;
+    }
+/****************************
+    header
+******************************/
+#header 
+    {
+    position: relative; top: 0px; left: 0px; width: 100%; background: url(%%brickwall%%) rgb(4,46,100);height: 80px; border-bottom: 1px solid #cccacc;
+    }
+.res-nightmode #header 
+    {
+    background: rgb(125,125,125) !important;
+    }
+/*****************************
+    reddit user bar
+*****************************/
+.res #header-bottom-right, #header-bottom-right{
+position:absolute;
+top:81px;
+right:0;
+width:auto;
+max-width:340px;
+height:21px;
+background-color:transparent;
+font-size:11px;
+color:#363636;
+padding:15px 8px 6px 5px;
+z-index: 100; 
+border-left: 1px solid #CCCACC;}
+
+#userbarToggle.userbarHide, #userbarToggle.userbarShow {
+    visibility: hidden;
+    }
+body:not(.loggedin) 
+
+#header-bottom-right{max-width:340px}
+
+#header-bottom-right a{color:#363636}
+
+#header-bottom-right a:hover{text-decoration:underline}
+
+.user .userkarma{font-weight:400;color:#363636;border:none;font-size:9px;transition:all .15s ease}
+
+.separator,.user{color:rgba(255,255,255,0.45)}
+
+#mail,#modmail{width:16px;height:14px;background-image:url(%%spritesheet%%)!important;background-repeat:no-repeat!important;background-color:transparent;transition:all .25s ease}
+
+#mail{top:-2px;overflow:visible}
+
+#mail.nohavemail{background-position:-32px -0}
+
+#mail.havemail{background-position:-32px -16px;opacity:1}
+
+.message-count{background-color:#f50;position:relative;top:-1px}
+
+#mail.havemail:before{position:fixed;padding:16px 24px;bottom:24px;z-index:100;background-color:#EA4848;border-radius:2px;box-shadow:0 1px 5px rgba(0,0,0,0.24);color:#fff;width:300px;height:48px;left:24px;content:"You have new messages!";text-indent:0;font-size:14px;font-family:arial,sans-serif;line-height:1;-webkit-transform:translateY(112px);transform:translateY(112px);transition:background-color .25s ease,box-shadow .25s ease;background-image:url(%%spritesheet%%);background-position:269px -32px;background-repeat:no-repeat}
+
+#mail.havemail:hover:before{background-color:#ec5b5b;box-shadow:0 3px 12px rgba(0,0,0,0.48)}
+
+#mail.havemail:active:before{background-color:#c73d3d;box-shadow:0 4px 14px rgba(0,0,0,0.76)}
+
+#modmail{top:-3px}
+
+#modmail.nohavemail{background-position:-48px -0}
+
+#modmail.havemail{background-position:-48px -16px;opacity:1}
+
+#header-bottom-right a.pref-lang,.loggedin .logout a{background-position:-0 -16px;background-image:url(%%spritesheet%%);width:16px;height:14px;display:inline-block;text-indent:-9999px;margin:0;position:relative;top:-1px;transition:all .25s ease}
+
+.loggedin .logout a{background-position:-16px -0}
+
+/*subreddit menu bar
+************************/
+#sr-header-area 
+    {
+    position: relative; top: 0px; left: 0px; width: 100%;border: none; background: #f1f1f1; border-bottom: 1px solid #cccacc;
+    }
+.res-nightmode #sr-header-area 
+    {
+    background: rgb(42,42,42) !important;
+    }
+#sr-header-area .srSep, .separator 
+    {
+    color: #5b5b5b;
+    font-weight: lighter;
+    }
+#sr-header-area a 
+    {
+    color: #3b3b3b;
+    font-weight: lighter;
+    }
+#sr-header-area a:hover
+    {
+    font-weight: lighter
+    }
+a.subbarlink > *
+    {
+    color: #444 !important;
+    }
+.res #sr-header-area a.RESShortcutsCurrentSub, .res #RESSubredditGroupDropdown .RESShortcutsCurrentSub a {
+    color: #444 !important;
+    font-weight: bold;
+    }
+#sr-header-area a.RESShortcutsCurrentSub,#RESSubredditGroupDropdown .RESShortcutsCurrentSub a, .RESShortcutsCurrentSub a, a.subbarlink.RESShortcutsCurrentSub
+    {
+    color: #fff !important;
+    font-weight: bold;
+    }
+#RESShortcutsEditContainer, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsLeft, #RESShortcutsSort, #sr-more-link 
+    {
+    visibility: hidden;
+    }
+.res #RESShortcuts 
+    {
+    color: #5b5b5b;
+    font-weight: lighter;
+    }
+
+/**************************
+    tabmenu
+**************************/
+.tabmenu
+    {
+    position: absolute;
+    margin: 0px;
+    top: 81px;
+    left: 0px;
+    background: #efefef;
+    border-bottom: 1px solid #cccacc;
+    width: 100%;
+    }
+.res-nightmode .tabmenu
+    {
+    background: #2a2a2a;
+    }
+.listing-page .tabmenu, .comments-page .tabmenu, .related-page .tabmenu, .other-discussions-page .tabmenu, .wiki-page .tabmenu 
+    {
+    clear: right;
+    position: absolute;
+    border-right: none;
+    z-index: 3;
+    }
+.tabmenu ul 
+    {
+    width: 100% !important;
+    height: 30px !important;
+    }
+.tabmenu li 
+    {
+    list-style-type: none;
+    display: inline-block !important;
+    margin: 0px;
+    padding: 0px
+    }
+.tabmenu li a
+    {
+    color: #363636;
+    font-size: 14px;
+    font-family: verdana, sans-serif;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    background: none /*rgb(44,62,80)*/;
+    display: block;
+    min-width: 55px;
+    padding: 8px;
+    padding-bottom: 9px !Important;
+    border: none;
+    }
+.res-nightmode .tabmenu li a
+    {
+    background: none !important;
+    color: rgb(255,255,255);
+    }
+.tabmenu li a:hover
+    {
+    Padding-bottom: 9px !important;
+    background: rgb(251,251,251);
+    color: rgb(0,0,0);
+    border: none;
+    }
+.res-nightmode  .tabmenu li a:hover
+    {
+    background: rgb(251,251,251) !important;
+    color: rgb(0,0,0);
+    }
+.tabmenu li.selected a 
+    {
+    color: rgb(0,0,0);
+    Padding-bottom: 9px !important;
+    background: rgb(251,251,251);
+    border: none;
+    }
+.res-nightmode  .tabmenu li.selected a
+    {
+    background: rgb(42,42,42) !important;
+    color: rgb(255,255,255);
+    }
+.tabmenu li a:active
+    {
+    }
+.tabmenu li.selected a:hover
+    {
+    Padding-bottom: 9px !important;
+    color: rgb(0,0,0) !important;
+    background: rgb(251,251,251);
+    }
+.res-nightmode  
+    {
+    background: rgb(42,42,42) !important;
+    }
+.tabmenu li:first-child a 
+    {
+    border-left: none !important;
+    }
+/*
+.tabmenu li a[href$="/Astrobox/"]::after {
+    content: " deals"
+    }
+.tabmenu li a[href$="/new/"]::after {
+    content: " deals";
+    width: 100px;
+    }
+.tabmenu li a[href$="/top/"]::after {
+    content: " deals"
+    }
+.tabmenu li a[href*="/wiki/"]::after {
+    content: " PC Deals"
+    }
+*/
+#viewImagesButton::after 
+    {
+    content: " "
+    }
+.listing-page .tabmenu li:nth-of-type(3),	
+.listing-page .tabmenu li:nth-of-type(4),
+.listing-page .tabmenu li a[href*="/ads"],
+.listing-page .tabmenu li a[href*="/gilded"]
+    {
+    display:none !important
+    } 
+
+/******************************
+    pagename
+******************************/
+.pagename,
+.pagename a,
+.pagename a:before
+    {
+    display: block;
+    height: 50px;
+    width: 495px;
+    transition: all 0.3s ease-in;
+    }
+.pagename 
+    {
+    overflow: hidden;
+    border: none;
+    margin: -15px auto;
+
+    }
+
+
+.pagename a 
+    {
+    content:"";
+    overflow:hidden;
+    text-indent: -9999px;
+    background-image: url(%%home%%);
+    background-repeat: no-repeat;
+    position: relative;
+    }
+
+.pagename a:hover 
+    {
+    color:  rgb(236,110,28);
+    text-decoration: none;    
+    }
+.pagename a:before 
+    {
+    content:'';
+    position: absolute;
+    top: 4.0em;
+    left: 0;
+    background:  rgba(251,251,251,0.5);
+    z-index: -1;
+    }
+.pagename a:hover:before 
+    {
+    top: 0;
+    }
+
+/******************
+    REDDIT ALIEN
+*******************/
+#header-img 
+    {
+    position: absolute; 
+    top: 32px; 
+    left: 0px; 
+    padding: 0px 10px 1px 10px; 
+    background: transparent;
+    }
+.res-nightmode #header-img
+    {
+    background: none !important;
+    }
+#header-img:hover 
+    {
+    background:rgba(251,251,251,0.5);
+    /*-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.75);*/
+    }
+.res-nightmode #header-img:hover
+    {
+    background: rgb(42,42,42) !important;
+    }
+#header-img:active
+    {
+    /*-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;*/
+    }
+
+/******************************
+    Sidebar
+******************************/
+.side 
+    {
+    width: 320px; margin: 50px 0px 0px 0px;padding: 10px; background: rgb(255,255,255);
+    }
+.side .titlebox 
+    {
+    margin: 10px 0px;
+    top: 10px;
+    float: left
+    }
+.side .spacer 
+    {
+    margin: 5px 0 5px 0;
+    background-color: none;
+    }
+.side .md 
+    {
+    overflow: visible;
+    width: 100%;
+    }
+.side .titlebox h1.redditname 
+    {
+    display: none
+    }
+.titlebox .md 
+    {
+    font-size: 1em;
+    }
+div.sidebox.create 
+    {
+    display: none !important;
+    }
+body:not(.profile-page) .side .titlebox .bottom 
+    {
+    display: none;
+    }
+.md sup {
+    line-height:unset;
+}
+
+/******************************
+    Search Box
+******************************/
+.side .spacer #search 
+    {
+    margin: 0px 0 10px 0;padding: 0;
+    }
+#search input[type='text'] 
+    {
+    padding: 5px 10px 5px 10px;width: 320px;border: 1px solid #e3e3e3;font-size: 14px;
+    }
+.searchpane 
+    {
+    margin: 0;padding: 10px 0 20px 96px;border-color: #d2d2d2;background-color: #f5f5f5;font-size: 12px;
+    }
+.searchfacets 
+    {
+    margin: -1px 0;border-color: #d2d2d2;background-color: transparent;box-shadow: none;
+    }
+#search input[type='submit'] 
+    {
+    padding: 10px 15px;
+    }
+.gold-accent, .infobar 
+    {
+    border-radius: 0px !important;border-color: #C1BFBF;background-color: #F5F5F5;margin: 10px 10px 15px !important;
+    }
+#noresults 
+    {
+    margin-left: 10px !important;
+    }
+
+/* Log-In Box***/
+.login-form-side 
+    {
+    background: #fff !important;border: 1px solid #e3e3e3!important;margin-bottom: 10px !important;
+    }
+.login-form-side #remember-me 
+    {
+    color: #696969 !important;
+    }
+.login-form-side input[type="text"], .login-form-side input[type="password"] 
+    {
+    border: 1px solid #e3e3e3!important;width: 150px;height:  margin: 5px 0px 0px 5px;top: 5px;padding: 6px;
+    }
+.login-form-side #remember-me 
+    {
+    color: #696969 !important;
+    }
+/******************************
+    Flair Selection Box
+******************************/
+.side .titlebox .flairtoggle 
+    {
+    margin-top: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    font-family: veranda, sans-serif;
+    font-weight: normal;
+    color: #fff;
+    font-size: 0px;
+    border: 1px solid rgb(30,30,32);
+    background-color: rgb(30,30,32);
+    vertical-align: bottom;
+    }
+.res-nightmode .side .titlebox .flairtoggle
+    {
+    background: rgb(42,42,42) !important;
+    border: none;
+    }
+.side .titlebox .flairtoggle::after 
+    {
+    visibility: visible;
+    font-size: 11px!important;
+    content: " Click edit to select your flair:";
+    cursor: default;
+    vertical-align: bottom;
+    }
+.side .titlebox .tagline 
+    {
+    border: 1px solid #d8d8d8;
+    background-color: white;
+    padding: 10px 0px 10px 10px;
+    margin: 0;margin-bottom: 8px;
+    min-height: 14px;
+    color: white;
+    }
+.res-nightmode .side .titlebox .tagline
+    {
+    background: rgb(42,42,42);
+    color: rgb(42,42,42);
+    border: none;
+    }
+.side .titlebox .tagline a.flairselectbtn 
+    { 
+    color: #fff!important;
+    background-color: rgb(236,110,28);
+    font-size: x-small;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 5px 2px 5px 2px;
+    border: none;
+    }
+.side .titlebox .tagline a.flairselectbtn:hover 
+    {
+    text-decoration: none !important;
+    color: #000!important;
+    background: rgb(229,229,229);
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    }
+.side .titlebox .tagline a.flairselectbtn:active 
+    {
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    }
+
+/*****************************************************
+/* increase the size of the flair selection box 
+*****************************************************/
+.flairoptionpane {
+    margin-bottom: 4px;
+    max-height: 700px;
+    overflow: auto;
+    text-align: center;
+    }
+
+/******************************
+    Link info - sidebar
+******************************/
+.linkinfo 
+    {
+    background-color: white;
+    color: #363636;
+    text-align: center;
+    font-size: normal;
+    padding: 10px 0px 15px 0px;
+    border: 1px solid #d8d8d8;
+    width: 320px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    }
+.linkinfo .date 
+    {
+    padding: 8px;
+    margin-top: -10px;
+    margin-bottom: 7px;
+    color: #fff;
+    background-color:rgb(30,30,32);
+    border: 1px solid rgb(30,30,32);
+    }
+.linkinfo .score .word 
+    {
+    display: none;
+    }
+.linkinfo .score .number:after 
+    {
+    margin: 0px 5px;
+    font-size: small;
+    display: inline-block;content: " points"
+    }
+.linkinfo .score 
+    {
+    font-size: 11px;
+    display: block;
+    }
+
+/******************************
+    H1, H2, H3 HEADERS
+******************************/
+.side .md h1, .commentarea h1 
+    {
+    font-size: medium;
+    font-weight: bold; 
+    color: #444;
+    margin: 10px 0px -12px 0px;
+    padding: 3px 0px 3px 4px ;
+    }
+.md h1, .commentarea h1 
+    {
+    padding-bottom: 0px;
+    border-bottom: 0px dotted #C1BFBF; 
+    font-weight: bold; 
+    margin-top: 0px !important;
+    margin-bottom: 2px
+    }
+.side .md h2, .md h2, .commentarea h2
+    {
+    color: #444;
+    background: #e5e5e5; 
+    font-size: medium;
+    font-weight: bold;
+    padding: 2px 4px;
+    margin: 0px 0px -7px 0px;
+    border-bottom: 0px dotted #C1BFBF;
+    }
+.md h3, .commentarea h3 
+    {
+    padding-bottom: 3px;
+    border-bottom: 1px dotted #C1BFBF;
+    font-weight: bold;
+    font-size: 130% !important;
+    }
+.side .md h4
+    {
+    margin-bottom: -4px;
+    }
+/******************************
+    tables
+******************************/
+table td a[title^="Won"]:before
+    {
+    background-color: rgba(0,153,0, 0.6);
+    border-radius: 0px;
+    /*-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.65);
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.65);*/
+    }
+table td a[title^="Lost"]:before
+    {
+    background-color: rgba(176,16,48, 0.8);
+    border-radius: 0px;
+    /*-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.65);
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.65);*/
+    }
+
+
+.md table {
+    font: lighter 12px veranda, sans-serif;
+    background-color: #fff;
+    margin-top: 7px !important;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    width: 100%;
+    }
+
+.side table {
+    width: 320px;
+}
+
+.wiki-page-content .md table {
+    width: 100% !important;
+    }
+
+.md th[align="right"] { 
+    text-align: right; 
+    }
+.md th[align="center"] { 
+    text-align: center; 
+    }
+.md th[align="left"] {
+    text-align: left;
+    }
+
+
+
+.side th {
+    display: none;
+    }
+.md table th {
+    background-color: #f2f2f2;
+    color: #444;
+    text-shadow: none;
+    border: none;
+    }
+
+.md table td {
+    border-top: 1px solid #cccacc;
+    border-left: 0px solid #cccacc;
+    border-bottom: 1px solid #cccacc;
+    border-right: 0px solid #cccacc;
+    padding: 0px;
+    vertical-align: middle;
+    font-weight: lighter;
+    letter-spacing: .5px;
+    background: none /*rgb(248,248,248)*/;
+    color: #000000;
+    }
+
+
+.md table tr:hover {
+    background-color: #c8dff2 !important;
+    }
+.side .md table:nth-of-type(1) a, .side .md table:nth-of-type(2) a {
+    display: block;
+    border: 0px;
+    bottom: 0px;
+    color: #0645AD 
+    }
+.md table a {
+    border: 0px;
+    bottom: 0px;
+    color: #0645AD 
+    }
+.md table a:hover {
+    color: #ec6e1c;
+    }
+div.content .md table tr:hover {
+    background-color: transparent
+    }
+div.content .md table a {
+    bottom: 0px
+    }
+.side td strong {
+    display: block;
+    background-color: /*transparent !important*/ rgb(235,235,235);
+    font-weight: normal !important;
+    width: 100%;
+    }
+.side td em {
+    display: block;
+    color: #000;
+    font-weight: normal !important;
+    font-style: normal !important;
+    float: left;
+    }
+
+/******************************
+    Sidebar lists
+******************************/
+
+div.titlebox div.usertext-body div.md
+    {
+    font-size: small;
+    }
+.md
+    {
+    overflow:hidden
+    }
+.md ul
+    {
+    list-style: none outside url(%%ball%%);
+    color: #444; 
+    margin: 0px 0px 0px 15px; 
+    padding: 4px; 
+    border: 0px solid #d8d8d8;
+    }
+.res-nightmode .md ul
+    {
+    background: rgb(42,42,42); 
+    color: rgb(255,255,255);
+    }
+.md li
+    {
+    border-bottom:0px solid #cdcdcd ;
+    margin-bottom: 2px; 
+    background: transparent
+    }
+.md li:hover
+    {
+    background-color: #c8dff2 !important;
+    }
+.md > * 
+    {
+    margin-bottom: 0px;
+    clear: both
+    }
+/******************************
+    Subscribers
+******************************/
+div.titlebox span.subscribers .number
+    {
+    display:block;text-indent: 10px;padding: 8px 0;
+    }
+* + html div.titlebox span.subscribers .number
+    {
+    display:inline;text-indent: 10px;padding: 12px 0;
+    }
+div.titlebox span.subscribers .number:after
+    {
+    content:' Luhnow-tics';
+    }
+div.titlebox span.subscribers .word
+    {
+    display: none;
+    }
+* + html div.titlebox span.subscribers .word
+    {
+    display: inline !important;
+    }
+p.users-online 
+    {
+    display: none !important
+    }
+
+/******************************
+mods, modtools, recent links boxes
+******************************/
+.sidecontentbox .content 
+    {
+    background: #fff;
+    }
+.sidecontentbox .content a 
+    {
+    color: #444
+    }
+.sidecontentbox .content a:hover 
+    {
+    color: #990000
+    }
+
+/********************************
+    submit page changes
+*********************************/
+
+/*    submit page tabmenu
+*********************************/
+ul.tabmenu.formtab
+    {
+    position: absolute;
+    top: 80px;
+    left: 0px; 
+    margin: 0px !important; 
+    padding: 0px !important
+    }
+.formtab.tabmenu li a 
+    {
+    color: #444;
+    font-size: 14px;
+    font-family: verdana, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background: rgb(229,229,229);
+    display: block;
+    min-width: 55px;
+    padding: 8px 8px 9px 8px !Important;
+    border: none;
+    }
+.formtab.tabmenu li a:hover 
+    {
+    Padding-bottom: 9px !important;
+    background: rgb(229,229,229);
+    color: #000 !important;
+    border: none;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    }
+.formtab.tabmenu li a:active
+    {
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    }
+.formtab.tabmenu li.selected a 
+    {
+    color: #fff;
+    padding: 7px 8px 9px 8px !Important;
+    background: rgb(166,0,0);
+    border: none;
+    }
+.formtab.tabmenu li.selected a:hover 
+    {
+    Padding-bottom: 9px !important;
+    color: #000 !important;
+    background: rgb(229,229,229);
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    }
+.gold-accent, .infobar 
+    {
+    border-color: #C1BFBF;
+    background-color: #F5F5F5;
+    margin: 10px 10px 15px !important;
+    }
+.info-notice
+    {
+    display: none;
+    }
+
+.submit-page .content button:not(.RESBigEditorPop)
+    { 
+    position: absolute;
+    top: 80px;
+    left: 465px;
+    color: #fff!important;
+    background-color: rgb(236,110,28);
+    font-size: 14px;
+    font-family: verdana, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    padding: 11px 8px 11px 8px !Important;
+    border: none;
+    }
+
+.submit-page .content button:hover 
+    {
+    color: #000!important;
+    background: rgb(229,229,229);
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    }
+.submit-page .content button:active
+    {
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.75) inset;
+    }
+.submit-page .gray, #url-field button, #suggested-reddits, .submit-page #suggest-title button 
+    {
+    display: none;
+    }
+#url-field button 
+    {
+    margin: 10px 0px 0px 5px;
+    }
+
+/*********************************
+    submit page style
+**********************************/
+.content > h1 
+    {
+    display: none !important; 
+    }
+div.formtabs-content 
+    {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    border: none !important; 
+    margin: 0px 0px 0px 0px 
+    }
+#link-desc:after, #text-desc:after 
+    {
+    font-weight: bold; 
+    display: block; 
+    content: "Any submission deeded inappropriate for this sub can be removed without notice";
+    padding-top: 5px;
+    }
+.roundfield, .content .submit .info-notice, .linefield 
+    {
+    background-color: #e6e6e6;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #CCCACC;
+    }
+
+/**********************************
+    body / content / misc stuff
+**********************************/
+body 
+    {
+    position: relative; top: 0px; left: 0px; background: none;
+    }
+.content 
+    {
+    margin: 50px 345px 0px 0px; background: rgb(242,242,242);
+    }
+.infobar.welcome 
+    {
+    display: none !important;
+    }
+/**************************
+    Content Submissions
+***************************/
+.rank 
+    {
+    display: none;
+    }
+.link 
+    {
+    margin: 0px 0px 10px 0px;padding: 5px 5px 5px 18px;background: #fff
+    }
+.res-nightmode .link
+    {
+    background: rgb(32,32,32) !important;
+    }
+/******************************
+    nested comments
+    was pointed to this by someone else, not sure of origin
+******************************/
+
+.link .usertext .md {padding: 0px 5px;background-color: #FAFAFA;border: 1px solid #d8d8d8;border-radius: 0px;}
+
+.comment .child, .comment .showreplies 
+    {border-left: 0px !important;}
+
+.comment 
+    {margin-left: 10px !important;margin-right: 5px!important;margin-top: 0!important;margin-bottom: 8px !important;background-color: #ffffff !important;border: 1px solid #e6e6e6 !important;padding: 5px 8px 0 5px!important;}
+
+.comment,
+.comment .comment .comment,
+.comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment 
+    {background-color: #fff !important;}
+
+.comment .comment,
+.comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment 
+    {background-color: #F7F7F8!important;}
+
+/******************************
+    comment box
+******************************/
+.usertext-edit textarea 
+    {
+    width: 500px;
+    height: 100px;
+    border: 1px solid rgb(215,215,215);
+    transition: border-color 0.15s ease-out 0s, box-shadow 0.15s ease-out 0s;
+    }
+.usertext-edit textarea:hover 
+    {
+    box-shadow: 0px 0px 2px 1px rgba(215,215,215, 0.5) inset;
+    transition: border-color 0.15s ease-out 0s, box-shadow 0.15s ease-out 0s;
+    }
+
+/******************************
+    Custom Up/Down Arrows
+******************************/
+/*
+.arrow:not(.prev):not(.next), .res-nightmode .arrow:not(.prev):not(.next)
+    {background: none transparent!important;color: #aaa;font-weight: normal;font-size: 1.5em;font-family: Consolas,Monaco,'Courier New',monospace;line-height: 12px;text-align: center;}
+.arrow.up:after,.arrow.upmod:after 
+    {content: '▲';}
+.arrow.down:after,.arrow.downmod:after 
+    {content: '▼';}
+.arrow.upmod,.arrow.up {}
+.arrow.upmod:after,.arrow.up:hover:after 
+    {color: #ff4900;}
+.arrow.downmod,.arrow.down {}
+.arrow.downmod:after, .arrow.down:hover:after 
+    {color: #9aa8f2;}
+.compressed .arrow:not(.prev):not(.next) 
+    {margin: 1px 0;}
+.link .score 
+    {color: #666;}
+.link .score.likes 
+    {color: #ff4900;}
+.link .score.dislikes 
+    {color: #9aa8f2;}
+*/
+/******************************
+    post title colors 
+******************************/
+a.title 
+    {
+    color: #000
+    }
+a.title:hover 
+    {
+    color: #920c15 !important;text-decoration: none !important;
+    }
+a.title:visited 
+    {
+    color: #336699 !important;
+    }
+a.title:visited:hover 
+    {
+    color: #920c15 !important;text-decoration: none !important;
+    }
+.res-nightmode a.title, .res-nightmode a.title:visited
+    {
+    color: rgb(224,224,224) !important; font-weight: 100!important;
+    }
+
+/******************************
+    Sticky Post Changes
+/******************************/
+.stickied 
+    {
+    border-bottom: 0px solid #d8d8d8;border-radius: 2px !important;background: #fff!important;
+    }
+.stickied .title 
+    {
+    color: #000!important;font-size: 15px !important;font-weight: normal !important
+    }
+.stickied .title:visited 
+    {
+    color: #000!important;
+    }
+.stickied-tagline 
+    {
+    color: #494949!important;
+    }
+
+
+/******************************
+    USER / SUBMITTER / MOD NAME COLORS
+******************************/
+.thing .tagline .author 
+    {color: #000 !important;background-color: transparent !important;font-weight: normal!important;border-radius: 0px !important;padding: 0px 2px !important;}
+.thing .tagline .author.submitter 
+    {color: #000 !important;background-color: transparent !important;font-weight: normal!important;border-radius: 0px !important;padding: 0px 2px !important;}
+.thing .tagline .author.submitter:hover 
+    {color: #000 !important;Text-decoration: underline !important;background-color: transparent !important;}
+.thing .tagline .author.moderator 
+    {color: white !important;background-color: #228822 !important;font-weight: bold !important;border-radius: 0px !important;padding: 0px 2px !important;}
+.res .thing .tagline .author 
+    {color: #000 !important;background-color: transparent !important;font-weight: normal!important;border-radius: 0px !important;padding: 0px 2px !important;}
+.res .thing .tagline .author.submitter 
+    {color: #000 !important;background-color: transparent !important;font-weight: normal!important;border-radius: 0px !important;padding: 0px 2px !important;}
+.res .thing .tagline .author.submitter:hover 
+    {color: #000 !important;Text-decoration: underline !important;background-color: transparent !important;}
+.res .thing .tagline .author.moderator 
+    {color: white !important;background-color: #228822 !important;font-weight: bold !important;border-radius: 0px !important;padding: 0px 2px !important;}
+
+/*******************************
+        THUMBNAIL 
+******************************/
+.thumbnail 
+    {
+    margin-top:4px;
+    background: transparent;
+    border:0px solid #ccc;
+    width:70px;
+    height:50px;
+    border-radius:0px
+    }
+.thumbnail img 
+    {
+    background-position:center center;
+    border-radius:0px
+    }
+.thumbnail.default, .thumbnail.self 
+    {
+    /*background-image:url(%%self-thumbnail%%) !important;
+    background-position:center center;*/
+    }
+.thing.stickied a.thumbnail
+    {
+    background-image: url(%%sticky-post%%) !important; 
+    background-position: center center
+    }
+.thumbnail[href*="//twitter.com"] img 
+    {
+    height:0;
+    width: 0;
+    }
+.thumbnail[href*="//twitter.com"] 
+    {
+    background-image: url(%%twitter%%) !important;
+    background-position: center center;
+    height: 50px;
+    width: 70px;
+    }
+
+/******************************
+    All of the buttons
+******************************/
+
+/****login, submit, save, preview, cancel buttons, post subscribe****/
+.login-form-side .submit *, .user-form .submit * 
+    { 
+    color: #fff !important;
+    background-color: rgb(243,119,35);
+    font-size: x-small;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px !Important;
+    border: none;
+    margin: 0px 4px 0px 0px !important;
+    }
+button, html input[type="button"], input[type="reset"], input[type="submit"] 
+    { 
+    color: #fff !important;
+    background-color: rgb(243,119,35);
+    font-size: x-small;
+    font-weight: normal;
+    text-align: center;
+    padding: 3px 5px !Important;
+    border: none;
+    margin-left: 10px;
+    }
+
+button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .login-form-side .submit *:hover, .user-form .submit *:hover
+    {
+    color: #fff !important;
+    background-color: rgb(245,133,33);
+    }
+
+button:active, html input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, .login-form-side .submit *:active, .user-form .submit *:active
+    {
+    background: rgb(243,119,35);
+    color: #fff;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.6) inset;
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 0.6) inset;
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 0.6) inset;
+   }
+.res button.RESBigEditorPop
+    {
+    color: rgb(102,102,102) !important;
+    background: #dfdfdf !important;
+    border: none !important;
+    }
+/********************************
+    Subscribe Button
+*********************************/
+
+.fancy-toggle-button
+    {
+    margin: 10px 0px 0px 0px;
+    }
+.titlebox .fancy-toggle-button .add.active.option:before
+    {
+    display:block;
+    width: 320px;
+    content:"Subscribe";
+    border:none;
+    color: rgb(102,102,102);
+    background: #fff;
+    font-weight:normal;
+    font-size:small;
+    text-align:left;
+    padding: 5px 0px;
+    text-indent: 10px;
+    position: absolute;
+    top:0;
+    }
+.titlebox .fancy-toggle-button .add.active.option:after 
+    {
+    display:block;
+    content:"x";
+    height:16px;
+    width:16px;
+    top: 7px !important;
+    background:url(%%add-remove%%) -0px -0px no-repeat;
+    position:absolute;
+    top: 0px;
+    z-index: 9;
+    right: 7px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+.titlebox .fancy-toggle-button .add.active.option
+    {
+    display: block;
+    width: 320px;
+    padding: 0px;
+    border: none;
+    height: 26px;
+    position:relative;
+    }
+.titlebox .fancy-toggle-button .add.active.option:hover:before
+    {
+    color: #000 !important;
+    }
+.titlebox .fancy-toggle-button .add.active.option:hover:after 
+    {
+    background:url(%%add-remove%%) -16px -0px no-repeat;
+    }
+/*********************************
+    Unsubscribe Button
+**********************************/
+.titlebox .fancy-toggle-button .remove.active.option:before
+    {
+    display:block;
+    width: 320px;
+    content:"Thank you for subscribing!";
+    border:none;
+    color: rgb(102,102,102);
+    background: #fff;
+    font-weight:normal;
+    font-size:small;
+    text-align:left;
+    padding: 5px 0px;
+    text-indent: 10px;
+    position: absolute;
+    top:0;
+    }
+.titlebox .fancy-toggle-button .remove.active.option:after
+    {
+    display:block;
+    content:"x";
+    height:16px;
+    width:16px;
+    top: 7px !important;
+    background:url(%%add-remove%%) -32px -0px no-repeat;
+    position:absolute;
+    top: 0px;
+    z-index: 9;
+    right: 7px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+.titlebox .fancy-toggle-button .remove.active.option
+    {
+    display: block;
+    width: 320px;
+    padding: 0px;
+    border: none;
+    height: 26px;
+    position:relative;
+    outline:non;
+    }
+.titlebox .fancy-toggle-button .active.option:focus{
+    outline:none;
+    }
+.titlebox .fancy-toggle-button .remove.active.option:hover:before
+    {
+    color: #000;
+    }
+.titlebox .fancy-toggle-button .remove.active.option:hover:after
+    {
+    background:url(%%add-remove%%) -48px -0px no-repeat;
+    }
+    
+/************************
+    Shortcut Add
+*************************/
+.side .RESshortcut:before
+    {
+    display:block;
+    width: 320px;
+    content:"Add to Shortcuts";
+    border:none;
+    color: rgb(102,102,102);
+    background: #fff;
+    font-weight:normal;
+    font-size:small;
+    text-align:left;
+    padding: 5px 0px;
+    text-indent: 10px;
+    position: absolute;
+    top:0;
+    }
+.side .RESshortcut:after
+    {
+    display:block;
+    content:"x";
+    height:16px;
+    width:16px;
+    top: 6px !important;
+    background:url(%%add-remove%%) -0px -0px no-repeat;
+    position:absolute;
+    top: 0px;
+    z-index: 9;
+    right: 7px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+.side .RESshortcut,
+.side .RESshortcutside
+    {
+    margin: 10px 0px 0px 0px;
+    display: block;
+    width: 320px;
+    padding: 0px;
+    border: none;
+    height: 26px;
+    position:relative;
+    }
+.side .RESshortcut:hover:before
+    {
+    color: #000!important;
+    }
+.side .RESshortcut:hover:after
+    {
+    background:url(%%add-remove%%) -16px -0px no-repeat;
+    }
+/*************************
+    Remove Shortcut Button
+****************************/
+
+.side .RESshortcut.remove:before
+    {
+    display:block;
+    width: 320px;
+    content:"Remove from Shortcuts";
+    border:none;
+    color: rgb(102,102,102);
+    background: #fff;
+    font-weight:normal;
+    font-size:small;
+    text-align:left;
+    padding: 5px 0px;
+    text-indent: 10px;
+    position: absolute;
+    top:0;
+    }
+.side .RESshortcut.remove:after
+    {
+    display:block;
+    content:"x";
+    height:16px;
+    width:16px;
+    top: 6px !important;
+    background:url(%%add-remove%%) -32px -0px no-repeat;
+    position:absolute;
+    top: 0px;
+    z-index: 9;
+    right: 7px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+.side .RESshortcut:focus
+    {
+    outline:none;
+    }
+.side .RESshortcut.remove:hover:after
+    {
+    background:url(%%add-remove%%) -48px -0px no-repeat;
+    }
+
+/*****************************
+    Add Dashboard Button
+*****************************/
+
+.side .RESDashboardToggle:before
+    {
+    display:block;
+    width: 320px;
+    content:"Add to Dashboard";
+    border:none;
+    color: rgb(102,102,102);
+    background: #fff;
+    font-weight:normal;
+    font-size:small;
+    text-align:left;
+    padding: 5px 0px;
+    text-indent: 10px;
+    position: absolute;
+    top:0;
+    }
+.side .RESDashboardToggle:after
+    {
+    display:block;
+    content:"x";
+    height:16px;
+    width:16px;
+    top: 6px !important;
+    background:url(%%add-remove%%) -0px -0px no-repeat;
+    position:absolute;
+    top: 0px;
+    z-index: 9;
+    right: 7px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+.side .RESDashboardToggle
+    {
+    margin: 8px 0px 0px 0px;
+    display: block;
+    width: 320px;
+    padding: 0px;
+    border: none;
+    height: 26px;
+    position:relative;
+    }
+.side .RESDashboardToggle:hover:before
+    {
+    color: #000!important;
+    }
+.side .RESDashboardToggle:hover:after
+    {
+    background:url(%%add-remove%%) -16px -0px no-repeat;
+    }
+
+/*************************************
+    Remove Dashboard Button
+**************************************/
+
+.side .RESDashboardToggle.remove:before
+    {
+    display:block;
+    width: 320px;
+    content:"Remove from Dashboard";
+    border:none;
+    color: rgb(102,102,102);
+    background: #fff;
+    font-weight:normal;
+    font-size:small;
+    text-align:left;
+    padding: 5px 0px;
+    text-indent: 10px;
+    position: absolute;
+    top:0;
+    }
+.side .RESDashboardToggle.remove:after
+    {
+    display:block;
+    content:"x";
+    height:16px;
+    width:16px;
+    top: 6px !important;
+    background:url(%%add-remove%%) -32px -0px no-repeat;
+    position:absolute;
+    top: 0px;
+    z-index: 9;
+    right: 7px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+.side .RESDashboardToggle:focus
+    {
+    outline:none;
+    }
+.side .RESDashboardToggle.remove:hover:after
+    {
+    background:url(%%add-remove%%) -48px -0px no-repeat;
+    }
+
+/******************************
+    res fixes 
+******************************/
+.keyNavAnnotation 
+    {
+    display: none;
+    }
+.entry.RES-keyNav-activeElement, .entry.RES-keyNav-activeElement div.md, .entry.RES-keyNav-activeElement .usertext-body, .commentarea .entry.RES-keyNav-activeElement div.noncollapsed 
+    {
+    background: none repeat scroll 0% 0% transparent !important;
+    }
+.entry.RES-keyNav-activeElement 
+    {
+    padding-right: 0px; 
+    outline: 0px none; 
+    border-width: 0px 3px 0px 0px !important; 
+    border-style: none solid none none !important; 
+    border-color: -moz-use-text-color rgb(161,0,0) -moz-use-text-color -moz-use-text-color !important;
+    }
+a.voteWeight, a.userTagLink.RESUserTagImage 
+    {
+    display: none !important;
+    }
+
+/************************************
+    submit a link/text buttons
+************************************/
+.morelink .nub 
+    {
+    display: none !important;
+    }
+.morelink
+    {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin: 0px 5px 0px 5px;
+    border: none;
+    letter-spacing: .5px;
+    background: rgb(243,119,35);
+    }
+.res-nightmode .morelink
+    {
+    width: 320px !important;
+    }
+.morelink:hover
+    {
+    background: rgb(245,133,33);
+    /*-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 1);
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 1);*/
+    }
+.morelink:active 
+    {
+    background:rgb(243,119,35);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 1) inset;
+    -moz-box-shadow:    0px 1px 1px 0px rgba(0, 0, 0, 1) inset;
+    box-shadow:         0px 1px 1px 0px rgba(0, 0, 0, 1) inset;
+    }
+.morelink a
+    {
+    text-align: center;
+    line-height: 150%;
+    font-weight: normal;
+    font-size: medium;
+    color: #fff;
+    }
+.morelink a:hover
+    {
+    color: #fff;
+    }
+.morelink a:active
+    {
+    color: #fff;
+    }
+
+/***************************
+    css transitions
+***************************/
+.morelink:not([href*="selftext"]), 
+.morelink [href*="selftext"], 
+.tabmenu li a, 
+/*.pagename a*/ 
+#header-img, 
+.side .titlebox .tagline a.flairselectbtn, 
+.login-form-side .submit *, 
+.user-form .submit *, 
+button, 
+html input[type="button"], 
+input[type="reset"], 
+input[type="submit"], 
+.RESSubscriptionButton.subscribe, 
+.fancy-toggle-button .add, 
+.submit-page .content button
+    {
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+    }
+
+
+
+
+/* Remove flair from the frontpage and admins box*/
+#siteTable span.flair, .sidecontentbox .flair 
+    {
+    display: none !important
+    }
+
+
+/* Prevent logos from showing up in RES topbar */
+#RESShortcuts a:before 
+    {
+    display: none
+    }
+
+/***************************************
+     Flair In Progress - (needs work)
+***************************************/
+
+
+/*************sidebar flair (schedule, standings)******/
+a[href="/LGLAA"]:before, a[href$="/r/angelsbaseball"]:before,
+a[href="/LGHOU"]:before, a[href$="/r/astros"]:before,
+a[href="/LGOAK"]:before, a[href$="/r/oaklandathletics"]:before,
+a[href="/LGTOR"]:before, a[href$="/r/torontobluejays"]:before,
+a[href="/LGATL"]:before, a[href$="/r/braves"]:before,
+a[href="/LGMIL"]:before, a[href$="/r/brewers"]:before,
+a[href="/LGSTL"]:before, a[href$="/r/cardinals"]:before,
+a[href="/LGCHI"]:before, a[href$="/r/chicubs"]:before,
+a[href="/LGARI"]:before, a[href$="/r/azdiamondbacks"]:before,
+a[href="/LGLAD"]:before, a[href$="/r/dodgers"]:before,
+a[href="/LGSFG"]:before, a[href$="/r/sfgiants"]:before,
+a[href="/LGCLE"]:before, a[href$="/r/wahoostipi"]:before,
+a[href="/LGSEA"]:before, a[href$="/r/mariners"]:before,
+a[href="/LGNYM"]:before, a[href$="/r/newyorkmets"]:before,
+a[href="/LGMIA"]:before, a[href$="/r/letsgofish"]:before,
+a[href="/LGWAS"]:before, a[href$="/r/nationals"]:before,
+a[href="/LGBAL"]:before, a[href$="/r/orioles"]:before,
+a[href="/LGSDP"]:before, a[href$="/r/padres"]:before,
+a[href="/LGPHI"]:before, a[href$="/r/phillies"]:before,
+a[href="/LGPIT"]:before, a[href$="/r/buccos"]:before,
+a[href="/LGTEX"]:before, a[href$="/r/texasrangers"]:before,
+a[href="/LGTBR"]:before, a[href$="/r/tampabayrays"]:before,
+a[href="/LGCIN"]:before, a[href$="/r/reds"]:before,
+a[href="/LGBOS"]:before, a[href$="/r/redsox"]:before,
+a[href="/LGCOL"]:before, a[href$="/r/coloradorockies"]:before,
+a[href="/LGKCR"]:before, a[href$="/r/kcroyals"]:before,
+a[href="/LGDET"]:before, a[href$="/r/motorcitykitties"]:before,
+a[href="/LGMIN"]:before, a[href$="/r/minnesotatwins"]:before,
+a[href="/LGCHW"]:before, a[href$="/r/whitesox"]:before,
+a[href="/LGNYY"]:before, a[href$="/r/yankees"]:before, a[href$="/r/nyyankees"]:before
+    {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    cursor: default;
+    background-repeat: no-repeat;
+    background-image: url(%%schedule-sprites%%);
+    vertical-align: middle;
+    margin: 1px;
+    content: "";
+    }
+a[href="/LGLAA"]:before, a[href$="/r/angelsbaseball"]:before {background-position: 0px 0px;}
+a[href="/LGHOU"]:before, a[href$="/r/astros"]:before {background-position: 0px -40px !important;}
+a[href="/LGOAK"]:before, a[href$="/r/oaklandathletics"]:before{background-position: 0px -80px;}
+a[href="/LGTOR"]:before, a[href$="/r/torontobluejays"]:before {background-position: 0px -120px;}
+a[href="/LGATL"]:before, a[href$="/r/braves"]:before {background-position: 0px -160px;}
+a[href="/LGMIL"]:before, a[href$="/r/brewers"]:before {background-position: 0px -200px;}
+a[href="/LGSTL"]:before, a[href$="/r/cardinals"]:before {background-position: 0px -240px;}
+a[href="/LGCHI"]:before, a[href$="/r/chicubs"]:before {background-position: 0px -280px;}
+a[href="/LGARI"]:before, a[href$="/r/azdiamondbacks"]:before {background-position: 0px -320px;}
+a[href="/LGLAD"]:before, a[href$="/r/dodgers"]:before {background-position: 0px -360px;}
+a[href="/LGSFG"]:before, a[href$="/r/sfgiants"]:before {background-position: 0px -400px;}
+a[href="/LGCLE"]:before, a[href$="/r/wahoostipi"]:before {background-position: 0px -440px;}
+a[href="/LGSEA"]:before, a[href$="/r/mariners"]:before {background-position: 0px -480px;}
+a[href="/LGNYM"]:before, a[href$="/r/newyorkmets"]:before {background-position: 0px -520px;}
+a[href="/LGMIA"]:before, a[href$="/r/letsgofish"]:before {background-position: 0px -560px;}
+a[href="/LGWAS"]:before, a[href$="/r/nationals"]:before {background-position: 0px -600px;}
+a[href="/LGBAL"]:before, a[href$="/r/orioles"]:before {background-position: 0px -640px;}
+a[href="/LGSDP"]:before, a[href$="/r/padres"]:before {background-position: 0px -680px;}
+a[href="/LGPHI"]:before, a[href$="/r/phillies"]:before {background-position: 0px -720px;}
+a[href="/LGPIT"]:before, a[href$="/r/buccos"]:before {background-position: 0px -760px;}
+a[href="/LGTEX"]:before, a[href$="/r/texasrangers"]:before {background-position: 0px -800px;}
+a[href="/LGTBR"]:before, a[href$="/r/tampabayrays"]:before {background-position: 0px -840px;}
+a[href="/LGCIN"]:before, a[href$="/r/reds"]:before {background-position: 0px -880px;}
+a[href="/LGBOS"]:before, a[href$="/r/redsox"]:before {background-position: 0px -920px;}
+a[href="/LGCOL"]:before, a[href$="/r/coloradorockies"]:before {background-position: 0px -960px;}
+a[href="/LGKCR"]:before, a[href$="/r/kcroyals"]:before {background-position: 0px -1000px;}
+a[href="/LGDET"]:before, a[href$="/r/motorcitykitties"]:before {background-position: 0px -1040px;}
+a[href="/LGMIN"]:before, a[href$="/r/minnesotatwins"]:before {background-position: 0px -1080px;}
+a[href="/LGCHW"]:before, a[href$="/r/whitesox"]:before {background-position: 0px -1120px;}
+a[href="/LGNYY"]:before, a[href$="/r/yankees"]:before, a[href$="/r/nyyankees"]:before {background-position: 0px -1160px;}
+
+a[href="/SPACE"]:before 
+    {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    cursor: default;
+    background-repeat: no-repeat;
+    background-image: url(%%SPACE%%);
+    vertical-align: middle;
+    margin: 1px;
+    content: "";
+    }
+a[href="/ASG"]:before
+    {
+    position: static;
+    width: 59px;
+    height: 34px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%ASG%%);
+    vertical-align: middle;
+    margin: 0px -13px !important;
+    content: "";
+    }
+
+
+/*general stuff for all the user flair*/
+.flair
+    {
+    text-indent: 9999px;
+    content: "";
+    overflow: hidden;
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 0px;
+    line-height: 40px; 
+    background-color: transparent !important; 
+    border: none
+    }
+/*
+.flair:hover
+    {width: auto; text-indent: 60px;}
+*/
+
+/*Team Logos, Cap*/
+.flair-ari {background-position: 0 -0px;height: 40px;width: 47px; background-image: url(%%logo-sprite%%);}
+.flair-ari-h {background-position: 0 -50px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-atl {background-position: 0 -100px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-atl-h {background-position: 0 -150px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-bal {background-position: 0 -200px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-bal-h {background-position: 0 -250px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-bos {background-position: 0 -300px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-bos-h {background-position: 0 -350px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-chi {background-position: 0 -400px;height: 40px;width: 40px;background-image: url(%%logo-sprite%%);}
+.flair-chi-h {background-position: 0 -450px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-cin {background-position: 0 -503px;height: 34px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-cin-h {background-position: 0 -550px;height: 40px;width: 49px; background-image: url(%%logo-sprite%%);}
+.flair-cle {background-position: 0 -600px;height: 40px;width: 31px; background-image: url(%%logo-sprite%%);}
+.flair-cle-h {background-position: 0 -650px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-col {background-position: 0 -700px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-col-h {background-position: 0 -750px;height: 40px;width: 52px; background-image: url(%%logo-sprite%%);}
+.flair-cws {background-position: 0 -800px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-cws-h {background-position: 0 -850px;height: 40px;width: 47px; background-image: url(%%logo-sprite%%);}
+.flair-det {background-position: 0 -900px;height: 40px;width: 31px; background-image: url(%%logo-sprite%%);}
+.flair-det-h {background-position: 0 -950px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+
+/*current astro logo*/
+.flair-hou {background-position: 0 -1000px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+
+/*hat blue/orange*/
+.flair-hou-h {background-position: 0 -1050px;height: 40px;width: 52px; background-image: url(%%logo-sprite%%);}
+
+/*current alt logo - blue*/
+.flair-hou1 {background-position: 0 -1100px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+
+/*hat solid blue*/
+.flair-hou1-h {background-position: 0 -1150px;height: 40px;width: 52px; background-image: url(%%logo-sprite%%);}
+
+/*current logo - orange*/
+.flair-hou2 {background-position: 0 -1200px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+
+/*hat solid orange*/
+.flair-hou2-h {background-position: 0 -1250px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+
+/*dome logo]*/
+.flair-hou3 {background-position: 0 -1300px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+
+/*brick red star*/
+.flair-hou4 {background-position: 0 -1350px;height: 40px;width: 42px; background-image: url(%%logo-sprite%%);}
+
+/*gold star*/
+.flair-hou5 {background-position: 0px -1400px;height: 40px;width: 46px; background-image: url(%%logo-sprite%%);}
+
+/*gold star woodmark*/
+.flair-hou6 {background-position: 0px -1450px;height: 40px;width: 60px; background-image: url(%%logo-sprite%%);}
+
+/*rainbow logo*/
+.flair-hou7 {background-position: 0px -1500px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+
+/*MMP*/
+.flair-hou8 {background-position: 0px -1550px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+
+/*colt 45*/
+.flair-hou9 {background-position: 0px -1600px;height: 40px;width: 60px; background-image: url(%%logo-sprite%%);}
+
+/*enron*/
+.flair-hou10 {background-position: 0px -1650px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+
+.flair-kcr {background-position: 0 -1700px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-kcr-h {background-position: 0 -1750px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-laa {background-position: 0 -1800px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-laa-h {background-position: 0 -1850px;height: 40px;width: 48px; background-image: url(%%logo-sprite%%);}
+.flair-lad {background-position: 0 -1900px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-lad-h {background-position: 0 -1950px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-mia {background-position: 0 -2000px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-mia-h {background-position: 0 -2050px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-mil {background-position: 0 -2100px;height: 40px;width: 38px; background-image: url(%%logo-sprite%%);}
+.flair-mil-h {background-position: 0 -2150px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-min {background-position: 0 -2200px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-min-h {background-position: 0 -2250px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-nym {background-position: 0 -2300px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-nym-h {background-position: 0 -2350px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-nyy {background-position: 0 -2400px;height: 40px;width: 36px; background-image: url(%%logo-sprite%%);}
+.flair-nyy-h {background-position: 0 -2450px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-oak {background-position: 0 -2500px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-oak-h {background-position: 0 -2550px;height: 40px;width: 52px; background-image: url(%%logo-sprite%%);}
+.flair-phi {background-position: 0 -2600px;height: 40px;width: 43px; background-image: url(%%logo-sprite%%);}
+.flair-phi-h {background-position: 0 -2650px;height: 40px;width: 49px; background-image: url(%%logo-sprite%%);}
+.flair-pit {background-position: 0 -2700px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-pit-h {background-position: 0 -2750px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-sdp {background-position: 0 -2800px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-sdp-h {background-position: 0 -2850px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-sea {background-position: 0 -2900px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-sea-h {background-position: 0 -2950px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-sfg {background-position: 0 -3000px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-sfg-h {background-position: 0 -3050px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-stl {background-position: 0 -3100px;height: 40px;width: 39px; background-image: url(%%logo-sprite%%);}
+.flair-stl-h {background-position: 0 -3150px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-tbr {background-position: 0 -3200px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-tbr-h {background-position: 0 -3250px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-tex {background-position: 0 -3300px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-tex-h {background-position: 0 -3350px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+.flair-tor {background-position: 0 -3400px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-tor-h {background-position: 0 -3450px;height: 40px;width: 50px; background-image: url(%%logo-sprite%%);}
+.flair-was {background-position: 0 -3500px;height: 40px;width: 40px; background-image: url(%%logo-sprite%%);}
+.flair-was-h {background-position: 0 -3550px;height: 40px;width: 51px; background-image: url(%%logo-sprite%%);}
+
+/*Player Faces*/
+.flair-altuve
+    {background-position: 0 -0px; width: 31px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-ashby
+    {background-position: 0 -50px; width: 28px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-ausmus
+    {background-position: 0 -100px; width: 30px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-backe
+    {background-position: 0 -150px; width: 30px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-bagwell
+    {background-position: 0 -200px; width: 26px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-bass
+    {background-position: 0 -250px; width: 30px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-berkman1
+    {background-position: 0 -300px; width: 28px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-berkman2
+    {background-position: 0 -350px; width: 29px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-biggio
+    {background-position: 0 -400px; width: 32px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-caminiti
+    {background-position: 0 -450px; width: 27px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-castro
+    {background-position: 0 -500px; width: 31px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-cedano
+    {background-position: 0 -550px; width: 30px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-clemens
+    {background-position: 0 -600px; width: 27px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-dierker1
+    {background-position: 0 -650px; width: 30px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-dierker2
+    {background-position: 0 -700px; width: 30px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-doran
+    {background-position: 0 -750px; width: 29px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-drabek
+    {background-position: 0 -800px; width: 33px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-gattis
+    {background-position: 0 -850px; width: 29px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-gregerson
+    {background-position: 0 -900px; width: 28px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-cruz
+    {background-position: 0 -950px; width: 30px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-julia
+    {background-position: 0 -1000px; width: 39px; height: 56px; background-image: url(%%player-sprite%%);margin-bottom: -16px !important;}
+.flair-julia2
+    {background-position: 0 -1057px; width: 37px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-kuechel
+    {background-position: 0 -1100px; width: 30px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-luhnow1
+    {background-position: 0 -1150px; width: 25px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-luhnow2
+    {background-position: 0 -1200px; width: 28px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-marisnick
+    {background-position: 0 -1250px; width: 34px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-milo
+    {background-position: 0 -1300px; width: 28px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-nierko
+    {background-position: 0 -1350px; width: 30px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-richard
+    {background-position: 0 -1400px; width: 27px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-ryan
+    {background-position: 0 -1450px; width: 28px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-oswalt1
+    {background-position: 0 -1500px; width: 31px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-oswalt2
+    {background-position: 0 -1550px; width: 35px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-scott
+    {background-position: 0 -1600px; width: 34px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-singleton
+    {background-position: 0 -1650px; width: 26px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-springer1
+    {background-position: 0 -1700px; width: 36px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-springer2
+    {background-position: 0 -1750px; width: 31px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-wynn
+    {background-position: 0 -1800px; width: 29px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-springer4
+    {background-position: 0 -1850px; width: 26px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-altuve2
+    {background-position: 0 -1900px; width: 35px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-butt
+    {background-position: 0 -1950px; width: 50px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-howard
+    {background-position: 0 -2000px; width: 32px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-julia3
+    {background-position: 0 -2050px; width: 37px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-correa1
+    {background-position: 0 -2100px; width: 30px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-marisnick2
+    {background-position: 0 -2150px; width: 34px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-butt2
+    {background-position: 0 -2200px; width: 50px; height: 40px; background-image: url(%%player-sprite%%);}
+.flair-rasmus1
+    {background-position: 0 -2250px; width: 50px; height: 32px; background-image: url(%%player-sprite%%);}
+.flair-conger1
+    {background-position: 0 -2300px; width: 28px; height: 40px; background-image: url(%%player-sprite%%);}
+
+
+/* Misc Flair*/
+.flair-mustache
+    {background-position: 0 -0px; width: 61px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-orbit
+    {background-position: 0 -50px; width: 62px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-okay
+    {background-position: 0 -100px; width: 32px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-watt
+    {background-position: 0 -150px; width: 27px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-alien
+    {background-position: 0 -200px; width: 29px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-yao
+    {background-position: 0 -250px; width: 29px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-zindler
+    {background-position: 0 -300px; width: 31px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-bag
+    {background-position: 0 -350px; width: 40px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-baystars
+    {background-position: 0 -400px; width: 42px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-buffalo
+    {background-position: 0 -450px; width: 50px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-carp
+    {background-position: 0 -500px; width: 39px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-dragons
+    {background-position: 0 -550px; width: 58px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-giants
+    {background-position: 0 -600px; width: 44px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-fighters
+    {background-position: 0 -650px; width: 36px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-hawks
+    {background-position: 0 -700px; width: 41px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-marines
+    {background-position: 0 -750px; width: 35px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-tigers
+    {background-position: 0 -800px; width: 40px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-eagles
+    {background-position: 0 -850px; width: 40px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-cats
+    {background-position: 0 -900px; width: 50px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-skeeters
+    {background-position: 0 -950px; width: 58px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-bandits
+    {background-position: 0 -1000px; width: 43px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-jethawks
+    {background-position: 0 -1050px; width: 65px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-hooks
+    {background-position: 0 -1100px; width: 50px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-absinthe
+    {background-position: 0 -1150px; width: 51px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-captain
+    {background-position: 0 -1200px; width: 29px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-dickel
+    {background-position: 0 -1250px; width: 34px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-hennessy
+    {background-position: 0 -1300px; width: 55px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-beam
+    {background-position: 0 -1350px; width: 31px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-patron
+    {background-position: 0 -1400px; width: 40px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-smirnoff
+    {background-position: 0 -1450px; width: 40px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-turkey
+    {background-position: 0 -1500px; width: 39px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-emi1
+    {background-position: 0 -1550px; width: 44px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-emi2
+    {background-position: 0 -1600px; width: 43px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-hanako
+    {background-position: 0 -1650px; width: 34px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-lilly1
+    {background-position: 0 -1700px; width: 43px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-lilly2
+    {background-position: 0 -1750px; width: 36px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-misha
+    {background-position: 0 -1800px; width: 46px; height: 60px; background-image: url(%%misc-sprite%%); margin-bottom: -20px !important;}
+.flair-rin
+    {background-position: 0 -1900px; width: 48px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-shizune
+    {background-position: 0 -1950px; width: 43px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-ed
+    {background-position: 0 -2000px; width: 44px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-ein
+    {background-position: 0 -2050px; width: 36px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-spike
+    {background-position: 0 -2100px; width: 43px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-bob
+    {background-position: 0 -2150px; width: 29px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-louise
+    {background-position: 0 -2200px; width: 20px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-tina
+    {background-position: 0 -2250px; width: 32px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-holo
+    {background-position: 0 -2300px; width: 47px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-flcl
+    {background-position: 0 -2350px; width: 37px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-haruhi
+    {background-position: 0 -2400px; width: 41px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-hotd
+    {background-position: 0 -2450px; width: 42px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-professor
+    {background-position: 0 -2500px; width: 34px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-bender
+    {background-position: 0 -2550px; width: 26px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-leela
+    {background-position: 0 -2600px; width: 61px; height: 50px; background-image: url(%%misc-sprite%%);margin-bottom: -10px !important;}
+.flair-zoidberg
+    {background-position: 0 -2700px; width: 35px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-amy
+    {background-position: 0 -2750px; width: 46px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-zap
+    {background-position: 0 -2800px; width: 25px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-hermes
+    {background-position: 0 -2850px; width: 38px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-morbo
+    {background-position: 0 -2900px; width: 36px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-nibbler
+    {background-position: 0 -2950px; width: 36px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-scruffy
+    {background-position: 0 -3000px; width: 34px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-fry
+    {background-position: 0 -3050px; width: 31px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-finn
+    {background-position: 0 -3100px; width: 51px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-jake1
+    {background-position: 0 -3150px; width: 43px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-jake2
+    {background-position: 0 -3200px; width: 40px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-marceline
+    {background-position: 0 -3250px; width: 45px; height: 55px; background-image: url(%%misc-sprite%%);margin-bottom: -15px !important;}
+.flair-pbubs
+    {background-position: 0 -3350px; width: 35px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-bmo
+    {background-position: 0 -3400px; width: 41px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-trunks
+    {background-position: 0 -3450px; width: 36px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-lsp
+    {background-position: 0 -3500px; width: 44px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-hank
+    {background-position: 0 -3550px; width: 31px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-girlfriend
+    {background-position: 0 -3600px; width: 42px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-brock
+    {background-position: 0 -3650px; width: 40px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-gary
+    {background-position: 0 -3700px; width: 27px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-dean
+    {background-position: 0 -3750px; width: 31px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-triana
+    {background-position: 0 -3800px; width: 32px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-venture
+    {background-position: 0 -3850px; width: 29px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-grizzlies
+    {background-position: 0 -3900px; width: 40px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-hill
+    {background-position: 0 -3950px; width: 65px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-star
+    {background-position: 0 -4000px; width: 40px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-whata
+    {background-position: 0 -4050px; width: 49px; height: 40px; background-image: url(%%misc-sprite%%);}
+.flair-marwin1
+    {width: 28px; height: 40px; background-image: url(%%marwin%%);}
+.flair-surly
+    {width: 41px; height: 40px; background-image: url(%%surly%%);}
+
+
+
+
+/*for special users*/
+a.author[href$="verified_account"]:after {
+    font-size: 1.2em;
+    padding: 2px;
+    background: #001831;
+    color: #DBD8CD;
+    border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+    content: /*url(%%thread-flair%%)*/ "Verified Account";
+    }
+
+
+a.author[href$="ShillyWakes"]:after
+    {
+    display: inline-block; 
+    color:red;
+    margin-left: 5px; 
+    content: "BANNED by /u/cmays90"; 
+    }
+
+/*just some pics*/
+a[href="/cat"]:before {
+    width: 248px;
+    height: 258px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%cat%%);
+    vertical-align: middle;
+    margin-right: 1px;
+    content: ""
+    }
+a[href="/od"]:before {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%od%%);
+    vertical-align: middle;
+    margin-right: 1px;
+    content: ""
+    }
+a[href="/home"]:before {
+    width: 128px;
+    height: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%home%%);
+    content: ""
+    }
+
+a[href="/okay"]:before {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%okay%%);
+    vertical-align: middle;
+    margin-right: 1px;
+    content: ""
+    }
+
+a[href="/meetup"]:before {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%meetup%%);
+    vertical-align: middle;
+    margin-right: 1px;
+    content: ""
+    }
+
+a[href="/ZERO"]:before {
+    width: 288px;
+    height: 235px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%zero%%);
+    vertical-align: middle;
+    margin-right: 1px;
+    content: ""
+    }
+
+a[href="/win"]:before {
+    width: 288px;
+    height: 288px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%win%%);
+    vertical-align: middle;
+    margin-right: 1px;
+    content: ""
+    }
+a[href="/smile"]:before {
+    width: 242px;
+    height: 322px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%smile%%);
+    vertical-align: middle;
+    margin-right: 1px;
+    content: ""
+    }
+
+
+
+
+/*Game Thread Team logos*/
+/*
+.linkflair div.entry p .linkflairlabel{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    display: block;
+    height: 100%;
+    border: none !important;
+    width: 0;
+    padding:0 !important;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: url(%%brickwall%%) no-repeat;
+}
+.linkflair div.entry p .linkflairlabel:hover{
+    color:#fff;
+    font-weight: normal;
+    line-height: 70px;
+    text-indent: 40px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width:270px !important;
+    max-width:270px !important;
+    padding: 0 !important;
+}
+.linkflair-game div.entry p .linkflairlabel {
+    border-left:#37AE65 solid 5px !important;
+    background-position: -1px 5px;
+    text-shadow:-1px 2px #22844B;
+}
+
+
+.linkflair-game.link ul{
+    display:block;
+    width:480px;
+    background:#eee;
+    padding:10px 10px;
+    list-style:none;
+    margin:0;
+    overflow:hidden;
+}
+.linkflair-game.link ul.flat-list{
+    background: #fbfbfb;
+}
+.linkflair-game.link ul li{
+    list-style:none;
+    margin:0;
+}
+.linkflair-game.link ul li:nth-of-type(1){
+    float:left;
+}
+.linkflair-game.link ul li:nth-of-type(2){
+    float:right;
+}
+
+.linkflair-gamediv div.expando{
+    width:500px;
+}
+.linkflair-game.link div.md table{
+    width:500px;
+    padding:0;
+    margin:0;
+}
+.linkflair-game.link div.md td,
+.linkflair-game.link div.md th{
+    border: none;
+    padding:5px;
+}
+.linkflair-game.link div div.expando hr{
+    display:none;
+}
+.linkflair-game.link div div.expando hr + p{
+    overflow:hidden;
+}
+*/
+
+
+a[href$="#home"] {display: block;font-size: 16px;color: rgb(80,80,80) !important; float: left; line-height: 80px;}
+
+a[href$="#away"] {display: block;font-size: 16px;color: rgb(80,80,80) !important;float: right; line-height: 80px;}
+
+a[href$="#home"]:before {display: block; height: 80px; width: 100px; content: ""; float: left;}
+
+a[href$="#away"]:after {display: block; height: 80px; width: 100px; content: ""; float: right;}
+
+
+a[href$="/r/azdiamondbacks#home"]:before, a[href$="/r/azdiamondbacks#away"]:after {background: url(%%logo-sprites-80x100%%) -0px -817px;}
+a[href$="/r/braves#home"]:before, a[href$="/r/braves#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -409px;}
+a[href$="/r/orioles#home"]:before, a[href$="/r/orioles#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -1606px;}
+a[href$="/r/redsox#home"]:before, a[href$="/r/redsox#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -2308px;}
+a[href$="/r/angelsbaseball#home"]:before, a[href$="/r/angelsbaseball#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -0px;}
+a[href$="/r/chicubs#home"]:before, a[href$="/r/chicubs#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -715px;}
+a[href$="/r/whitesox#home"]:before, a[href$="/r/whitesox#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -2806px;}
+a[href$="/r/reds#home"]:before, a[href$="/r/reds#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -2218px;}
+a[href$="/r/wahoostipi#home"]:before, a[href$="/r/wahoostipi#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -1096px;}
+a[href$="/r/coloradorockies#home"]:before, a[href$="/r/coloradorockies#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -2410px;}
+a[href$="/r/motorcitykitties#home"]:before, a[href$="/r/motorcitykitties#away"]:after{background: url(%%logo-sprites-80x100%%) 0 -2602px;}
+a[href$="/r/astros#home"]:before, a[href$="/r/astros#away"]:after {background:  url(%%logo-sprites-80x100%%) 0 -105px;}
+a[href$="/r/kcroyals#home"]:before, a[href$="/r/kcroyals#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -2500px;}
+a[href$="/r/dodgers#home"]:before, a[href$="/r/dodgers#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -919px;}
+a[href$="/r/letsgofish#home"]:before, a[href$="/r/letsgofish#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -1402px;}
+a[href$="/r/brewers#home"]:before, a[href$="/r/brewers#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -511px;}
+a[href$="/r/minnesotatwins#home"]:before, a[href$="/r/minnesotatwins#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -2704px;}
+a[href$="/r/newyorkmets#home"]:before, a[href$="/r/newyorkmets#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -1300px;}
+a[href$="/r/yankees#home"]:before, a[href$="/r/nyyankees#home"]:before, 
+a[href$="/r/yankees#away"]:after, , a[href$="/r/nyyankees#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -2918px;}
+a[href$="/r/oaklandathletics#home"]:before, a[href$="/r/oaklandathletics#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -205px;}
+a[href$="/r/phillies#home"]:before, a[href$="/r/phillies#away"]:after {background:  url(%%logo-sprites-80x100%%) 0 -1810px;}
+a[href$="/r/buccos#home"]:before, a[href$="/r/buccos#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -1912px;}
+a[href$="/r/padres#home"]:before, a[href$="/r/padres#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -1708px;}
+a[href$="/r/mariners#home"]:before, a[href$="/r/mariners#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -1198px;}
+a[href$="/r/sfgiants#home"]:before, a[href$="/r/sfgiants#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -1012px;}
+a[href$="/r/cardinals#home"]:before, a[href$="/r/cardinals#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -613px;}
+a[href$="/r/tampabayrays#home"]:before, a[href$="/r/tampabayrays#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -2116px;}
+a[href$="/r/texasrangers#home"]:before, a[href$="/r/texasrangers#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -2014px;}
+a[href$="/r/torontobluejays#home"]:before, a[href$="/r/torontobluejays#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -307px;}
+a[href$="/r/nationals#home"]:before, a[href$="/r/nationals#away"]:after {background: url(%%logo-sprites-80x100%%) 0 -1504px;}
+
+
+/*** GAME DAY THREADS FLAIR ***/
+
+.linkflair a.title {
+    vertical-align: middle;
+}
+
+.linkflair-win a.title:before, .linkflair-loss a.title:before {
+    display: block;
+    height: 25px;
+    float: left;
+    color: white;
+    font-size: 18px;
+    text-align: center !important;
+    text-shadow: 0px 0px 2px #fff;
+    margin-right: 3px;
+    padding: 0px 2px;
+    border-radius: 2px;
+}
+
+.linkflair-win a.title:before {
+    background-color: #4CBB17;
+    content:"WIN";
+}
+
+.linkflair-loss a.title:before {
+    background-color: rgb(153,0,0);
+    content:"LOSS";
+    display: block;
+}
+
+#siteTable a.title[href*="/Game"]:before, .linkflair-gameday a.title:before {
+    background-image: url(%%gameday%%) !important;
+    display: block;
+    height: 25px;
+    width: 25px;
+    content: "";
+    float: left;
+}
+
+.linkflair-modflair a.title:before {
+    background-image: url(%%ball%%) !important;
+    display: block;
+    height: 18px;
+    width: 18px;
+    content: "";
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wiki-page .md > * {
+    clear: none;
+}
+
+.wiki-page-games .wiki-page-content table {
+    width:600px;
+}
+.wiki-page-games .wiki-page-content table td{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.wiki-page .wiki-page-content .wiki > .toc > ul {
+    float: right;
+    padding: 11px 22px;
+    margin: 0px 0px 11px 22px;
+    border: 1px solid #8D9CAA;
+    list-style: outside none none;
+    max-width: 300px;
+}
+
+.wiki-page-games a[title="WIN"]:after, .wiki-page-games a[title="LOSS"]:after {
+  height: 10px;
+  width: 10px;
+  content: "";
+  display: inline-block;
+  margin-left:3px;
+}
+
+.linkflair-gameday .md, .linkflair-win .md, .linkflair-loss .md {
+    max-width: 70em;
+    overflow: auto;
+}
+
+.linkflair-gameday .md table{
+    width: 100%;
+}
+
+
+
+
+a[href="/yao"]:before {width: 288px;height: 288px;display: inline-block;background-repeat: no-repeat;background-image: url(%%yao%%);vertical-align: middle;margin-right: 0px;content: ""}
+
+
+/*some wiki stuff*/
+.wiki-page .wiki-page-content .wiki > .toc > ul 
+    {
+    display: none;
+    }
+/*targeted user flair*/
+a.author[href$="ieandrew91"]:after
+    {
+    display: inline-block; 
+    background-image: none; 
+    vertical-align: middle; 
+    margin-left: 5px; 
+    content: "Drew91"; 
+    font: small-caps bold 14px/10px "Lucida Grande","Lucida Sans Unicode",sans-serif;
+    color: blue;
+    }
+
+/*makes text shake*/
+a[href="/intensifies"] {
+    color: #000000;
+    text-transform: uppercase;
+    display: block;
+    font-size: 15px;
+    animation: intensify .1s steps(5) infinite;
+    -webkit-animation: intensify .1s steps(5) infinite;
+    -moz-animation: intensify .1s steps(5) infinite;
+    }
+
+@keyframes intensify {     0% { margin-left: 0px; }     100% { margin-left: 2px; }   }
+
+@-webkit-keyframes intensify {     0% { margin-left: 0px; }     100% { margin-left: 2px; }    }
+
+@-moz-keyframes intensify { 0% { margin-left: 0px; } 100% { margin-left: 2px; }    }
